@@ -9,3 +9,70 @@
   
   <name>samples</name>
 
+================================================================================================================================================================================================================================================2nd commit from taskrepo
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.apache.maven.shared</groupId>
+    <artifactId>maven-shared-components</artifactId>
+    <version>34</version>
+    <relativePath/>
+  </parent>
+
+  <artifactId>maven-project-utils</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+
+  <name>Apache Maven Project Utils</name>
+  <description>
+    Utils for Maven Projects, such as resolving multimodule paths
+  </description>
+
+  <scm>
+    <connection>scm:git:https://gitbox.apache.org/repos/asf/maven-project-utils.git</connection>
+    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/maven-project-utils.git</developerConnection>
+    <url>https://github.com/apache/maven-project-utils/tree/${project.scm.tag}</url>
+    <tag>HEAD</tag>
+  </scm>
+  <issueManagement>
+    <system>jira</system>
+    <url>https://issues.apache.org/jira/browse/MSHARED-933?jql=project%20%3D%20MSHARED%20AND%20component%20%3D%20maven-project-utils</url>
+  </issueManagement>
+  <ciManagement>
+    <system>Jenkins</system>
+    <url>https://ci-builds.apache.org/job/Maven/job/maven-box/job/maven-project-utils/</url>
+  </ciManagement>
+  <distributionManagement>
+    <site>
+      <id>apache.website</id>
+      <url>scm:svn:https://svn.apache.org/repos/asf/maven/website/components/${maven.site.path}</url>
+    </site>
+  </distributionManagement>
+
+  <properties>
+    <mavenVersion>3.1.0</mavenVersion>
+    <javaVersion>7</javaVersion>
+    <project.build.outputTimestamp>2020-04-04T09:03:59Z</project.build.outputTimestamp>
+  </properties>
